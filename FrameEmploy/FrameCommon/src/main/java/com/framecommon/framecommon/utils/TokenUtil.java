@@ -155,6 +155,7 @@ public class TokenUtil {
     private static String getTokenFromRequest(HttpServletRequest req) {
         String bearerToken = req.getHeader("Authorization");
         if (bearerToken != null && bearerToken.startsWith(TOKEN_PREFIX)) {
+            logger.info("Bearer token found in request.");
             return bearerToken.substring(TOKEN_PREFIX.length());
         }
         return null;
