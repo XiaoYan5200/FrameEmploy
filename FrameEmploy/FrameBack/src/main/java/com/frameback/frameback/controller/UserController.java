@@ -11,4 +11,8 @@ import javax.annotation.Resource;
  */
 public class UserController {
     private RestTemplate restTemplate = new RestTemplate();
+
+    public static void main(String[] args) {
+        System.out.println("hello world");
+    }
 }
