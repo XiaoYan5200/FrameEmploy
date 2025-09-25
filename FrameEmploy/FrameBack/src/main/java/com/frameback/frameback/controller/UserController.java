@@ -10,11 +10,5 @@ import javax.annotation.Resource;
  * @date 2025/5/26
  */
 public class UserController {
-    @Resource
-    private final RestTemplate restTemplate;
-
-    public UserController(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-
-    }
+    private RestTemplate restTemplate = new RestTemplate();
 }
